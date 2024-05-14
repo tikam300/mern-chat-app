@@ -17,7 +17,7 @@ export const SocketContextProvider = ({children})=>{
         console.log("before socket ",authUser);
         if(authUser){
             console.log("after socket ",authUser);
-            const socket = io("http://localhost:5000",{
+            const socket = io("https://chat-app-tikam.onrender.com",{
                 query:{
                     userId: authUser._id,
                 }
